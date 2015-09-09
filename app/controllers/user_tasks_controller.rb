@@ -69,8 +69,14 @@ class UserTasksController < ApplicationController
 
   private
 
-    def all_tasks
-      @user_tasks = UserTask.order(:due)
+
+#Section I am editing for my HW.
+    def all_tasks   
+        #  if @user_tasks.present? do
+         @user_tasks = UserTask.order(:due)
+        #  else
+        #  redirect_to "/images/sad-panda.jpg"
+        #  end  
     end
 
     # Use callbacks to share common setup or constraints between actions.
