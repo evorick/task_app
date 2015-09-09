@@ -70,7 +70,7 @@ class UserTasksController < ApplicationController
   private
 
 
-#Section I am editing for my HW.
+#TODO: Add a redirect is there is no tasks present.
     def all_tasks   
         #  if @user_tasks.present? do
          @user_tasks = UserTask.order(:due)
