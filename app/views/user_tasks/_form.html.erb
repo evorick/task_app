@@ -2,8 +2,8 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :description %>
-    <%= f.input :due %>
+    <%= f.input :description, as: :text, placeholder: "Do things!" %>
+    <%= f.input :due, as: :string, placeholder: "Today!" %>
   </div>
 
   <div class="form-actions">
