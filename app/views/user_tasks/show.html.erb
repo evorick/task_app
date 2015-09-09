@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @user_task.description %>
+</p>
+
+<p>
+  <strong>Due:</strong>
+  <%= @user_task.due %>
+</p>
+
+<%= link_to 'Edit', edit_user_task_path(@user_task) %> |
+<%= link_to 'Back', user_tasks_path %>
