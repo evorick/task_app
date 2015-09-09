@@ -70,7 +70,7 @@ class UserTasksController < ApplicationController
   private
 
     def all_tasks
-      @user_tasks = UserTask.all
+      @user_tasks = UserTask.order(:due)
     end
 
     # Use callbacks to share common setup or constraints between actions.

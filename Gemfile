@@ -35,6 +35,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'simple_form'
 gem 'bootstrap-datepicker-rails'
+gem 'font-awesome-rails'
+gem 'stamp'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
