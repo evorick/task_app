@@ -36,6 +36,8 @@ gem 'bootstrap-datepicker-rails'
 gem 'font-awesome-rails'
 gem 'stamp'
 gem 'will_paginate', '~> 3.0.6'
+gem 'figaro'
+gem 'omniauth-facebook'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
