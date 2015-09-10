@@ -12,3 +12,6 @@ div#task-form {
   display: none;
 }
 
+.task a[data-method="delete"]:hover {
+  test-decoration: line-through;
+}
