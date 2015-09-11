@@ -4,6 +4,10 @@
 @import "bootstrap-datepicker3";
 @import "font-awesome";
 
+//Example of SCSS code.
+$primary_blue : #00B4FF;
+$darker_blue : #00A3E7;
+
 body {
   padding-top: 70px;
 }
@@ -14,4 +18,9 @@ div#task-form {
 
 .task a[data-method="delete"]:hover {
   text-decoration: line-through;
+}
+
+//SCSS code being implemented.
+h1 {
+  color: $darker_blue;
 }
