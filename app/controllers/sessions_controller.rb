@@ -1,4 +1,6 @@
 class SessionsController < ApplicationController
+  def new
+  end
   def create
     auth = request.env["omniauth.auth"]
     # find_by_provider_and_uid is Rails magic method to search Active Record using those field names

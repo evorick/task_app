@@ -7,8 +7,10 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'pages#home'
+  get '/signin' => "sessions#new", :as => :signin
   get '/auth/:provider/callback' => "sessions#create"
   get '/signout' => "sessions#destroy", :as => :signout
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

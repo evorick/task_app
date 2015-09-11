@@ -1,4 +1,5 @@
 class UserTasksController < ApplicationController
+  before_action :authenticate! 
   before_action :set_user_task, only: [:show, :edit, :update, :destroy]
   before_action :all_tasks, only: [:index, :create, :update, :destroy]
 
@@ -69,6 +70,9 @@ class UserTasksController < ApplicationController
 
   private
 
+  def authenticate!
+    redirect_to :signin unless current_user
+  end
 
 #TODO: Add a redirect is there is no tasks present.
     def all_tasks   
