@@ -27,6 +27,7 @@ class UserTasksController < ApplicationController
   # POST /user_tasks.json
   def create
     @user_task = UserTask.new(user_task_params)
+    @user_task.user_id = current_user.id
 
     respond_to do |format|
       if @user_task.save

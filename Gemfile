@@ -38,6 +38,7 @@ gem 'stamp'
 gem 'will_paginate', '~> 3.0.6'
 gem 'figaro'
 gem 'omniauth-facebook'
+gem 'awesome_print'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
