@@ -25,7 +25,7 @@
           <li><%= link_to fa_icon("sign-out", text: "Sign out"), signout_path, id: "sign_out" %></li>
           <li><%= image_tag current_user.small_image %></li>
         <% else %>
-          <li><%= link_to fa_icon("sign-in", text: "Sign in with Facebook"), "/auth/facebook", id: "sign-in" %></li>
+          <li><%= link_to fa_icon("sign-in", text: "Sign in with Facebook"), "/auth/facebook", class: 'navbar-text-color', id: "sign-in" %></li>
         <% end %>
       </ul>
     </div><!-- /.navbar-collapse -->

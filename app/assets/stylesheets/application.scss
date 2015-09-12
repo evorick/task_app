@@ -59,10 +59,18 @@ h1 {
 }
 
 .navbar-text-color {
-  color: #fff;
+  color: #fff !important;
+}
+
+.navbar-text-color:hover {
+  color: #feca00 !important;
 }
 
 .navbar-brand {
   padding-left: 20px;
+}
+
+.btn.btn-primary.btn-lg:hover {
+  color: #feca00;
 }
 
